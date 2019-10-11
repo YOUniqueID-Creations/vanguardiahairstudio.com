@@ -110,10 +110,13 @@
 
   <div class="views-field views-field-field-slide-image featured2">        <div class="field-content"><div id="field-orbit-1-wrapper" class="field-orbit-wrapper">
   <div class="field-orbit field-orbit-1">
-          <img class="field-orbit-image field-orbit-image-1" typeof="foaf:Image" src="./images/orbit/Welcome.png" width="1000" height="500" alt="" title="Welcome"/>          <img class="field-orbit-image field-orbit-image-2" data-caption="#field-orbit-image-2-caption" typeof="foaf:Image" src="./images/orbit/salon_image.png" width="1000" height="500" alt="Welcome to Vanguardia Hair Studio"/>          <img class="field-orbit-image field-orbit-image-3" data-caption="#field-orbit-image-3-caption" typeof="foaf:Image" src="./images/orbit/aveda.png" width="1000" height="500" alt="Treat your hair with AVEDA" title="AVEDA available"/>          <img class="field-orbit-image field-orbit-image-4" data-caption="#field-orbit-image-4-caption" typeof="foaf:Image" src="./images/orbit/studio1.png" width="1000" height="500" alt="Relax as we beautify your hair"/>      </div>
-                  <span id="field-orbit-image-2-caption" class="orbit-caption">Welcome to Vanguardia Hair Studio</span>
-                <span id="field-orbit-image-3-caption" class="orbit-caption">Treat your hair with AVEDA</span>
-                <span id="field-orbit-image-4-caption" class="orbit-caption">Relax as we beautify your hair</span>
+          <img class="field-orbit-image field-orbit-image-1" typeof="foaf:Image" src="/images/orbit/Welcome.png" width="1000" height="500" alt="" title="Welcome"/>
+          <img class="field-orbit-image field-orbit-image-2 lazy" data-caption="#field-orbit-image-2-caption" typeof="foaf:Image" data-src="/images/orbit/salon_image.png" width="1000" height="500" alt="Welcome to Vanguardia Hair Studio"/>
+          <img class="field-orbit-image field-orbit-image-3 lazy" data-caption="#field-orbit-image-3-caption" typeof="foaf:Image" data-src="/images/orbit/aveda.png" width="1000" height="500" alt="Treat your hair with AVEDA" title="AVEDA available"/>
+          <img class="field-orbit-image field-orbit-image-4 lazy" data-caption="#field-orbit-image-4-caption" typeof="foaf:Image" data-src="/images/orbit/studio1.png" width="1000" height="500" alt="Relax as we beautify your hair"/>      </div>
+          <span id="field-orbit-image-2-caption" class="orbit-caption">Welcome to Vanguardia Hair Studio</span>
+          <span id="field-orbit-image-3-caption" class="orbit-caption">Treat your hair with AVEDA</span>
+          <span id="field-orbit-image-4-caption" class="orbit-caption">Relax as we beautify your hair</span>
       </div>
 </div>  </div>  </div>
     </div>
@@ -180,7 +183,7 @@
         <span property="dc:title" content="Map It" class="rdf-meta element-hidden"></span>
 
   <div class="content">
-    <div class="field field-name-field-address field-type-text field-label-hidden field-wrapper"><iframe title="Vanguardia Hair Studio on Google Maps" width="300" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?hl=en&amp;q=4405+E.+4th+St.+Long+Beach%2C+CA+90814&amp;z=14&amp;t=m&amp;output=embed"></iframe>
+    <div class="field field-name-field-address field-type-text field-label-hidden field-wrapper"><iframe title="Vanguardia Hair Studio on Google Maps" width="300" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" data-src="https://maps.google.com/maps?hl=en&amp;q=4405+E.+4th+St.+Long+Beach%2C+CA+90814&amp;z=14&amp;t=m&amp;output=embed" class="lazy"></iframe>
 </div>  </div>
 
 
@@ -195,7 +198,7 @@
 
 
       <div id="fb-root"></div>
-<script>
+<script defer>
 <!--//--><![CDATA[// ><!--
 (function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -205,7 +208,7 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
 //--><!]]>
-</script><script>
+</script><script defer>
 <!--//--><![CDATA[// ><!--
 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 //--><!]]>
@@ -233,6 +236,14 @@
 <!--//--><![CDATA[//><!--
 jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"vanguardia_template","theme_token":"sCuQmeiSG_DrlV8R2jCIYMVZbbAEjnnlF9DGAFGgS5s"},"field_orbit":{"field-orbit-1":{"animation":"fade","animationSpeed":800,"timer":true,"resetTimerOnClick":false,"advanceSpeed":4000,"pauseOnHover":false,"startClockOnMouseOut":false,"startClockOnMouseOutAfter":1000,"directionalNav":true,"captions":true,"captionAnimation":"fade","captionAnimationSpeed":800,"bullets":false,"bulletThumbs":false,"bulletThumbLocation":"","fluid":true}}});
 //--><!]]>
+</script>
+<script>
+  var elements = document.getElementsByClassName("lazy");
+  for (let element of elements) {
+    console.log(element);
+    var src = element.getAttribute('data-src');
+    element.setAttribute('src', src);
+  }
 </script>
 </body>
 </html>
