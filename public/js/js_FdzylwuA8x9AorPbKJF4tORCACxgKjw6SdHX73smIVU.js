@@ -349,25 +349,3 @@ Nt.thead,Nt.th=Nt.td,v.support.htmlSerialize||(Nt._default=[1,"X<div>","</div>"]
   });
 }(this, document, jQuery));
 ;
-
-/*
-     FILE ARCHIVED ON 18:09:13 Oct 14, 2018 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 07:29:02 Oct 05, 2019.
-     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
-
-     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
-     SECTION 108(a)(3)).
-*/
-/*
-playback timings (ms):
-  LoadShardBlock: 509.71 (3)
-  PetaboxLoader3.resolve: 514.713 (2)
-  RedisCDXSource: 22.698
-  load_resource: 894.946
-  captures_list: 548.94
-  exclusion.robots: 0.192
-  CDXLines.iter: 13.607 (3)
-  PetaboxLoader3.datanode: 871.629 (5)
-  esindex: 0.013
-  exclusion.robots.policy: 0.178
-*/

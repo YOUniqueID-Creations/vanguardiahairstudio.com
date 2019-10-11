@@ -10134,25 +10134,3 @@ Drupal.theme.prototype = {
 
 })(jQuery);
 ;
-
-/*
-     FILE ARCHIVED ON 16:40:54 Oct 14, 2018 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 07:28:23 Oct 05, 2019.
-     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
-
-     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
-     SECTION 108(a)(3)).
-*/
-/*
-playback timings (ms):
-  RedisCDXSource: 7.441
-  captures_list: 353.414
-  exclusion.robots.policy: 0.213
-  load_resource: 336.166
-  esindex: 0.017
-  CDXLines.iter: 12.257 (3)
-  PetaboxLoader3.datanode: 393.259 (5)
-  exclusion.robots: 0.229
-  LoadShardBlock: 330.344 (3)
-  PetaboxLoader3.resolve: 145.134 (2)
-*/
