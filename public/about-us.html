@@ -118,7 +118,7 @@
         <span property="dc:title" content="Map It" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>
 
   <div class="content">
-    <div class="field field-name-field-address field-type-text field-label-hidden field-wrapper"><iframe title="Vanguardia Hair Studio on Google Maps" width="300" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?hl=en&amp;q=4405+E.+4th+St.+Long+Beach%2C+CA+90814&amp;z=14&amp;t=m&amp;output=embed"></iframe>
+    <div class="field field-name-field-address field-type-text field-label-hidden field-wrapper"><iframe title="Vanguardia Hair Studio on Google Maps" width="300" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" data-src="https://maps.google.com/maps?hl=en&amp;q=4405+E.+4th+St.+Long+Beach%2C+CA+90814&amp;z=14&amp;t=m&amp;output=embed" class="lazy"></iframe>
 </div>  </div>
 
 
@@ -170,7 +170,7 @@
   <span property="dc:title" content="Map It" class="rdf-meta element-hidden"></span>
 
 <div class="content">
-  <div class="field field-name-field-address field-type-text field-label-hidden field-wrapper"><iframe title="Vanguardia Hair Studio on Google Maps" width="300" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?hl=en&amp;q=4405+E.+4th+St.+Long+Beach%2C+CA+90814&amp;z=14&amp;t=m&amp;output=embed"></iframe>
+  <div class="field field-name-field-address field-type-text field-label-hidden field-wrapper"><iframe title="Vanguardia Hair Studio on Google Maps" width="300" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" data-src="https://maps.google.com/maps?hl=en&amp;q=4405+E.+4th+St.+Long+Beach%2C+CA+90814&amp;z=14&amp;t=m&amp;output=embed" class="lazy"></iframe>
   </div>
 </div>
 
@@ -226,5 +226,12 @@ fjs.parentNode.insertBefore(js, fjs);
 jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"vanguardia_template","theme_token":"WXFlycxDrghAmkl1PIuF3T5njCw_Tc4AC5169B_eLow"}});
 //--><!]]>
 </script>
+<script defer>
+    var elements = document.getElementsByClassName("lazy");
+    for (let element of elements) {
+      var src = element.getAttribute('data-src');
+      element.setAttribute('src', src);
+    }
+  </script>
 </body>
 </html>
