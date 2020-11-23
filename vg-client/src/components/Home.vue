@@ -32,9 +32,14 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'Home',
   props: {
     msg: String
+  },
+  metaInfo () {
+    return {
+      title: "Vanguardia Hair Studio | Welcome"
+    }
   }
 }
 </script>

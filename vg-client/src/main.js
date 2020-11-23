@@ -10,6 +10,10 @@ Vue.config.productionTip = false
 Vue.use(BootstrapVue);
 Vue.use(firestorePlugin);
 
+import { Analytics } from './services/firebase/analytics';
+Vue.use(Analytics);
+// Vue.prototype.$analytics =
+
 new Vue({
   render: h => h(App),
 }).$mount('#app')

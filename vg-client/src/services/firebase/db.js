@@ -1,4 +1,4 @@
-import {App} from './app'
+import {LFirebase} from './lfirebase'
 import 'firebase/firestore'
 
-export const DB = App.firestore();
+export const DB = LFirebase.firestore();

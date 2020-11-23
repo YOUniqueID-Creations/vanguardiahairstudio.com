@@ -1,4 +1,4 @@
-import {App} from './app';
+import {LFirebase} from './lfirebase';
 import 'firebase/storage';
 
-export const Storage = App.storage();
+export const Storage = LFirebase.storage();

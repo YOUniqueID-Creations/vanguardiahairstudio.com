@@ -1,4 +1,4 @@
-import {App} from './app';
+import {LFirebase} from './lfirebase';
 import 'firebase/auth';
 
-export const Auth = App.auth();
+export const Auth = LFirebase.auth();
