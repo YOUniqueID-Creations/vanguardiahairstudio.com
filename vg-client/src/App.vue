@@ -1,28 +1,29 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <Home msg="Welcome to Your Vue.js App"/>
-  </div>
+  <b-container fluid id="app">
+    <b-row>
+      <b-col>
+        <navbar/>
+      </b-col>
+    </b-row>
+    <b-row>
+      <b-col>
+        <router-view/>
+      </b-col>
+    </b-row>
+  </b-container>
 </template>
 
 <script>
-import Home from './components/Home.vue'
+import Navbar from '@/components/elements/Navbar'
 
 export default {
   name: 'App',
   components: {
-    Home
+    Navbar
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
