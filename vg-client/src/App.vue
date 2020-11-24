@@ -25,5 +25,5 @@ export default {
 </script>
 
 <style>
-
+body { width: 100%;}
 </style>

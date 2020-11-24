@@ -2,7 +2,6 @@
     <b-navbar
         toggeable="md"
         type="dark"
-        variant="info"
     >
     <b-navbar-brand :to="{name:'Home'}">Home</b-navbar-brand>
         <b-navbar-nav>
@@ -21,3 +20,14 @@ export default {
     name: 'Navbar'
 };
 </script>
+
+<style scoped>
+.navbar {
+    background-color: transparent !important;
+    position: absolute;
+    min-width: 320px;
+    float: left;
+    width: 100%;
+    z-index: 800;
+}
+</style>
