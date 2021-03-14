@@ -1,22 +1,31 @@
 <template>
-  <main>
-    <div class="content">
-      <div class="clearfix">
-        <div class="hero">
-          <b-jumbotron fluid>
-            <div class="hero-overlay"></div>
-            <div class="hero-content">
-              <div>
-                <h1>Vanguardia Hair Studio</h1>
-                <hr class="my-4">
-                <p>All are welcome</p>
-              </div>
+  <div class="content">
+    <div class="clearfix">
+      <div class="hero">
+        <b-jumbotron fluid>
+          <div class="hero-overlay"></div>
+          <div class="hero-content">
+            <div>
+              <h1>Vanguardia Hair Studio</h1>
+              <hr class="my-4">
+              <p>All are welcome</p>
             </div>
-          </b-jumbotron>
-        </div>
+          </div>
+        </b-jumbotron>
       </div>
+
+        <b-row align-h="center" class="home" no-gutters>
+          <b-col cols="11" md="10">
+            <p>Vanguardia Hair Studio is a fully staffed professional beauty salon conveniently located in Long Beach's Belmont Heights suburb. Our creative, independent stylists offer a wide range of services, from hair cutting, coloring, styling, and relaxing, to make-up, brow artistry, and hair care products. Visit us <strong>Tuesday through Saturday</strong>, or call any of our highly experienced independent stylists to schedule an appointment.</p>
+          </b-col>
+        </b-row>
+        <b-row no-gutters>
+          <b-col>
+            <img src="@/assets/images/content/home/salon_image.png" alt="" class="bw_bottom">
+          </b-col>
+        </b-row>
     </div>
-  </main>
+  </div>
 </template>
 
 <script>
@@ -75,6 +84,17 @@ export default {
   transform: translate(-50%, -50%);
 }
 
-.hero-content h1 {font-size: 5rem;}
+.hero-content h1 {font-size: 4rem;}
 .hero-content p {font-size: 1.4rem;}
+.home {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  font-size: 2rem;
+  line-height: 2;
+}
+.bw_bottom {
+  width: 100%;
+  max-height: 700px;
+  object-fit: cover;
+}
 </style>
