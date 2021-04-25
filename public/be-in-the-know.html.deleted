@@ -61,7 +61,7 @@
       <nav class="twelve columns hide-for-small">
           <ul class="nav-bar contain-to-grid sticky">
             <li class="first leaf"><a href="/">Home</a></li>
-            <li class="leaf"><a href="/be-in-the-know" class="active">Be In The Know</a></li>
+            <!-- <li class="leaf"><a href="/be-in-the-know" class="active">Be In The Know</a></li> -->
             <li class="leaf"><a href="/treat-yourself-our-salons-amazing-services">Services</a></li>
             <li class="leaf"><a href="/stylist">Stylists</a></li>
             <li class="leaf"><a href="/products">Products</a></li>
@@ -78,7 +78,7 @@
           <nav id="sideMenu">
               <ul class="nav-bar contain-to-grid sticky">
                 <li class="first leaf"><a href="/">Home</a></li>
-                <li class="leaf"><a href="/be-in-the-know" class="active">Be In The Know</a></li>
+                <!-- <li class="leaf"><a href="/be-in-the-know" class="active">Be In The Know</a></li> -->
                 <li class="leaf"><a href="/treat-yourself-our-salons-amazing-services">Services</a></li>
                 <li class="leaf"><a href="/stylist">Stylists</a></li>
                 <li class="leaf"><a href="/products">Products</a></li>
@@ -127,7 +127,7 @@
   <h2 class="block-title">Thank You for Visiting Vanguardia</h2>
 
 <ul><li><a href="/">Home</a></li>
-<li><a href="/be-in-the-know">Be In The Know</a></li>
+<!-- <li><a href="/be-in-the-know">Be In The Know</a></li> -->
 <li><a href="/treat-yourself-our-salons-amazing-services">Services</a></li>
 <li><a href="/products">Products</a></li>
 <li><a href="/about-us">About Us</a></li>
