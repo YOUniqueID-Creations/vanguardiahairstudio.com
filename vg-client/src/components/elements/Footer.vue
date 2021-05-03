@@ -26,7 +26,7 @@
             </b-col>
             <b-col md="2" class="footer_section">
                 <h2>Hours</h2>
-                Tue-Fri: 11:00 AM to 6:00 PM<br>
+                Mon - Fri: 11:00 AM to 6:00 PM<br>
                 Sat: 9:00 AM to 5:00 PM<br>
                 Sun: 11:00 AM to 5:00 PM<br>
                 Mon: closed<br><br>
