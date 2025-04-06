@@ -1,4 +1,5 @@
 {
+  "name": "Vanguardia Hair Studio",
   "dependencies": {
     "vuefire": "^2.2.4"
   }
