@@ -206,7 +206,7 @@
 <div class="bottom-bar panel">
     <div class="row">
       <div class="twelve columns">
-        &copy; 2018 Vanguardia Hair Studio    </div>
+        &copy; 2025 Vanguardia Hair Studio    </div>
     </div>
   </div>
     <script src="/js/js_hlCLQpntqrRHJZKq7SR-RjlP-bHU9g034i2KM-1o0fQ.js"></script>
@@ -224,23 +224,22 @@
         element.setAttribute('src', src);
       }
     </script>
-    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-analytics.js"></script>
-    <script>
-      // Your web app's Firebase configuration
-      var firebaseConfig = {
-        apiKey: "AIzaSyB6fYQ9GrlwLv-7VRMaaiNFDfm3cHXY4r4",
-        authDomain: "vanguardia-hair-studio.firebaseapp.com",
-        databaseURL: "https://vanguardia-hair-studio.firebaseio.com",
-        projectId: "vanguardia-hair-studio",
-        storageBucket: "vanguardia-hair-studio.appspot.com",
-        messagingSenderId: "946317675664",
-        appId: "1:946317675664:web:693d9267f713340769dc15",
-        measurementId: "G-VREF4TQEH0"
-      };
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-      firebase.analytics();
-    </script>
+  <script type="module">
+    import { initializeApp } from 'https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js'
+    import { initializeAnalytics } from 'https://www.gstatic.com/firebasejs/11.6.0/firebase-analytics.js'
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyB6fYQ9GrlwLv-7VRMaaiNFDfm3cHXY4r4",
+      authDomain: "vanguardia-hair-studio.firebaseapp.com",
+      databaseURL: "https://vanguardia-hair-studio.firebaseio.com",
+      projectId: "vanguardia-hair-studio",
+      storageBucket: "vanguardia-hair-studio.firebasestorage.app",
+      messagingSenderId: "946317675664",
+      appId: "1:946317675664:web:693d9267f713340769dc15",
+      measurementId: "G-VREF4TQEH0"
+    };
+    const app = initializeApp(firebaseConfig);
+    initializeAnalytics(app);
+  </script>
   </body>
   </html>
