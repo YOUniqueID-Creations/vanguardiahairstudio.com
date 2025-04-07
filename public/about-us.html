@@ -25,7 +25,7 @@
 <title>About Vanguardia Hair Studio</title>
 <link type="text/css" rel="stylesheet" href="/css/misc.min.css" media="all"/>
 <link type="text/css" rel="stylesheet" href="/css/field.min.css" media="all"/>
-<link type="text/css" rel="stylesheet" href="/css/main.min.css?v=20210502" media="all"/>
+<link type="text/css" rel="stylesheet" href="/css/main.min.css?v=20250406" media="all"/>
     <!--[if lt IE 9]>
 		<script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
@@ -92,19 +92,15 @@
 
 <div class="row">
   <div id="main" class="twelve columns">
-                <a id="main-content"></a>
-                <h1 id="page-title" class="title">About Vanguardia Hair Studio</h1>
-
-
-
-
-      <article id="node-11" class="node node-page view-mode-full" about="/about-us" typeof="foaf:Document">
+    <section>
+      <a id="main-content"></a>
+      <h1 id="page-title" class="title">About Vanguardia Hair Studio</h1>
       <span property="dc:title" content="About Vanguardia Hair Studio" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>
       <div class="body field"><p>Conveniently located in Long Beach's Belmont Heights, Vanguardia Hair Studio has been working with men and women since 2001. Our stylists are licensed professionals proving modern services and techniques, such as Sebastian, Toni and Guy, Vidal Sasoon, and more are part of every service art.</p>
-<p>Vanguardia Hair Studio was conceived in the realm of a devoted personal beauty and personal care business. Beyond the beauty, craft, and artistry of our profession, our passion for caring and nurturing services has become our distinctive brand. Over the years this has turned into the Legacy of a Family whose beliefs are imbued in our affection to others; a family of experienced, skillful, and modern, up to date stylists.</p>
-<p>We would love to share our artistic creations and happy faces with you. <strong>Call or visit us today!</strong></p>
-</div>
-</article>
+        <p>Vanguardia Hair Studio was conceived in the realm of a devoted personal beauty and personal care business. Beyond the beauty, craft, and artistry of our profession, our passion for caring and nurturing services has become our distinctive brand. Over the years this has turned into the Legacy of a Family whose beliefs are imbued in our affection to others; a family of experienced, skillful, and modern, up to date stylists.</p>
+        <p>We would love to share our artistic creations and happy faces with you. <strong>Call or visit us today!</strong></p>
+      </div>
+    </section>
 
 
   <div class="block block-nodeblock block-nodeblock-4" style="text-align: center;">
@@ -215,7 +211,7 @@ fjs.parentNode.insertBefore(js, fjs);
 <div class="bottom-bar panel">
   <div class="row">
     <div class="twelve columns">
-      &copy; 2018 Vanguardia Hair Studio    </div>
+      &copy; 2025 Vanguardia Hair Studio    </div>
   </div>
 </div>
   <script src="/js/js_hlCLQpntqrRHJZKq7SR-RjlP-bHU9g034i2KM-1o0fQ.js"></script>
@@ -233,23 +229,22 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
       element.setAttribute('src', src);
     }
   </script>
-  <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-analytics.js"></script>
-  <script>
-    // Your web app's Firebase configuration
-    var firebaseConfig = {
+  <script type="module">
+    import { initializeApp } from 'https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js'
+    import { initializeAnalytics } from 'https://www.gstatic.com/firebasejs/11.6.0/firebase-analytics.js'
+
+    const firebaseConfig = {
       apiKey: "AIzaSyB6fYQ9GrlwLv-7VRMaaiNFDfm3cHXY4r4",
       authDomain: "vanguardia-hair-studio.firebaseapp.com",
       databaseURL: "https://vanguardia-hair-studio.firebaseio.com",
       projectId: "vanguardia-hair-studio",
-      storageBucket: "vanguardia-hair-studio.appspot.com",
+      storageBucket: "vanguardia-hair-studio.firebasestorage.app",
       messagingSenderId: "946317675664",
       appId: "1:946317675664:web:693d9267f713340769dc15",
       measurementId: "G-VREF4TQEH0"
     };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-    firebase.analytics();
+    const app = initializeApp(firebaseConfig);
+    initializeAnalytics(app);
   </script>
 </body>
 </html>
