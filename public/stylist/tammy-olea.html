@@ -25,7 +25,7 @@
 <title>Stylist Profile for Tammy Olea | Vanguardia Hair Studio</title>
 <link type="text/css" rel="stylesheet" href="/css/misc.min.css" media="all"/>
 <link type="text/css" rel="stylesheet" href="/css/field.min.css" media="all"/>
-<link type="text/css" rel="stylesheet" href="/css/main.min.css?v=20210502" media="all"/>
+<link type="text/css" rel="stylesheet" href="/css/main.min.css?v=20250406" media="all"/>
     <!--[if lt IE 9]>
 		<script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
@@ -92,6 +92,7 @@
 
 <div class="row">
   <div id="main" class="twelve columns">
+    <section>
                 <a id="main-content"></a>
                 <h1 id="page-title" class="title">Tammy Olea</h1>
 
@@ -119,13 +120,14 @@
 
       <div class="view-footer">
       <script>
-<!--//--><![CDATA[// ><!--
-!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-//--><!]]>
-</script>    </div>
+      <!--//--><![CDATA[// ><!--
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+      //--><!]]>
+      </script>    </div>
 
 
-</div>
+      </div>
+    </section>
   </div>
 
     </div>
@@ -217,7 +219,7 @@
     <div class="bottom-bar panel">
       <div class="row">
         <div class="twelve columns">
-          &copy; 2018 Vanguardia Hair Studio    </div>
+          &copy; 2025 Vanguardia Hair Studio    </div>
       </div>
     </div>
       <script src="/js/js_hlCLQpntqrRHJZKq7SR-RjlP-bHU9g034i2KM-1o0fQ.js"></script>
@@ -235,23 +237,22 @@
             element.setAttribute('src', src);
           }
         </script>
-        <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-app.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-analytics.js"></script>
-        <script>
-          // Your web app's Firebase configuration
-          var firebaseConfig = {
+        <script type="module">
+          import { initializeApp } from 'https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js'
+          import { initializeAnalytics } from 'https://www.gstatic.com/firebasejs/11.6.0/firebase-analytics.js'
+
+          const firebaseConfig = {
             apiKey: "AIzaSyB6fYQ9GrlwLv-7VRMaaiNFDfm3cHXY4r4",
             authDomain: "vanguardia-hair-studio.firebaseapp.com",
             databaseURL: "https://vanguardia-hair-studio.firebaseio.com",
             projectId: "vanguardia-hair-studio",
-            storageBucket: "vanguardia-hair-studio.appspot.com",
+            storageBucket: "vanguardia-hair-studio.firebasestorage.app",
             messagingSenderId: "946317675664",
             appId: "1:946317675664:web:693d9267f713340769dc15",
             measurementId: "G-VREF4TQEH0"
           };
-          // Initialize Firebase
-          firebase.initializeApp(firebaseConfig);
-          firebase.analytics();
+          const app = initializeApp(firebaseConfig);
+          initializeAnalytics(app);
         </script>
     </body>
     </html>
